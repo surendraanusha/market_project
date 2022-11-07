@@ -1,0 +1,10 @@
+<nav class="nav">
+    <p routerLink="/" class="logo">Logo</p>
+    <ul>
+        <li class="list-opt" routerLink="/">Home</li>
+        <li class="list-opt" routerLink="/market">Markets</li>
+        <li class="list-opt" routerLink="/bookings">Bookings</li>
+        <button mat-raised-button color="accent" *ngIf="!loggedIn" routerLink="/login">Sing Up</button>
+        <button mat-raised-button color="primary" *ngIf="loggedIn" (click)="signOut()">Sing Out</button>
+    </ul>
+</nav>

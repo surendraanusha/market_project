@@ -1,0 +1,29 @@
+<div class="market-container">
+    <div class="whole-content">
+        <img src="{{marketObj.imageUrl}}" alt="" class="market-image"/>
+        <div class="content-container">
+            <div class="editer">
+            <h2><b>Market-Name: </b>{{marketObj.marketName}}</h2>
+            <i class="fa-light fa-pen-to-square"></i>
+            </div>
+            <h2><b>Reg.no: </b>{{marketObj.marketNumber}}</h2>
+            <h3><b>address:</b> {{marketObj.location}}</h3>
+            <p><b>About Market:</b> {{marketObj.description}}</p>
+            <p><b>Contact:</b> {{marketObj.contact}}</p>
+            <p>slots availablity:</p>
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Choose a date</mat-label>
+                <input matInput [matDatepicker]="myDatePicker" [min]="minDate"> 
+                <mat-datepicker-toggle matSuffix [for]="myDatePicker"></mat-datepicker-toggle>
+                <mat-datepicker #myDatePicker>
+                    <mat-datepicker-actions>
+                        <button mat-button matDatepickerCancel>Cancel</button>
+                        <button mat-raised-button color="primary" matDatepickerApply>Apply</button>
+                      </mat-datepicker-actions>
+                </mat-datepicker>
+            </mat-form-field>
+            <br>
+            <button mat-raised-button color="primary">Book Your Slot</button>
+        </div>
+    </div>
+</div>

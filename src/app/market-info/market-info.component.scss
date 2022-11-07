@@ -1,0 +1,42 @@
+
+.whole-content{
+    display: flex;
+    justify-content: space-between;
+    // justify-content: center;
+}
+.market-image{
+    height: 400px;
+    width: 50%;
+    border-radius: 10px;
+}
+.content-container{
+    // background-color: red;
+    padding-left: 20px;
+    width:50%;
+}
+.market-container{
+    padding: 20px;
+    // background-color: aqua;
+}
+.editer{
+    display: flex;
+    justify-content: space-between;
+}
+.example-form-field {
+    margin-right: 20px;
+  }
+
+
+@media screen and (max-width:768px) {
+    .whole-content{
+        flex-direction: column;
+    }
+    .content-container{
+        margin-top: 10px;
+        width: 100%;
+        padding-left: 0px;
+    }
+    .market-image{
+        width: 100%;
+    }
+}

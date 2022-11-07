@@ -1,0 +1,32 @@
+.nav{
+    background-color: rgb(209, 233, 249);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+.logo{
+    color: rgb(43, 116, 243);
+    cursor: pointer;
+    font-family: serif;
+    font-size: 20px;
+}
+p.logo{
+    margin-bottom: 0px;
+    padding-right: 10px;
+}
+
+.profile{
+    border-radius: 50px;
+    height: fit-content;
+    width: fit-content;
+    background-color: rgb(157, 156, 156);
+    color: blue;
+}
+.list-opt{
+    padding-right: 10px;
+    cursor: pointer;
+}

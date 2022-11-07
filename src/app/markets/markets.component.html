@@ -1,0 +1,20 @@
+<div class="markets-container">
+    <ng-container *ngFor="let market of marketArray.keys">
+            <mat-card class="example-card" (click)="addMe(market)">
+                <img src="{{marketArray[market]['imageUrl']}}"
+                 alt="Photo of a Shiba Inu"
+                 class="card-image"
+                 >
+                <mat-card-content>
+                <b>MarketName:</b>  {{marketArray[market]['marketName']}}
+                <br>
+                <b>MarketNumber:</b>  {{marketArray[market]['marketNumber']}} 
+                <br>
+                <b>MarketLocation:</b>  {{marketArray[market]['location']}}  
+                <br>
+                <b>Contact:</b>  {{marketArray[market]['contact']}}
+                </mat-card-content>
+              </mat-card>
+    </ng-container>
+</div>
+<!-- <app-market-info [marketObj]="marketObject"></app-market-info> -->
