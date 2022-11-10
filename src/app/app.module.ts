@@ -13,7 +13,8 @@ import { AuthenticationComponent } from './authentication/authentication.compone
 import { AuthenticateModule } from './authenticate/authenticate.module';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { NotFundComponent } from './not-fund/not-fund.component';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MarketFormComponent } from './market-form/market-form.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { NotFundComponent } from './not-fund/not-fund.component';
     HeaderComponent,
     AuthenticationComponent,
     NotFundComponent,
+    MarketFormComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +32,7 @@ import { NotFundComponent } from './not-fund/not-fund.component';
     MatButtonModule,
     MatButtonToggleModule,
     AuthenticateModule,
+    FontAwesomeModule,
     ReactiveFormsModule
   ],
   providers: [GettingDataService],

@@ -1,0 +1,51 @@
+.booking-container{
+    display: flex;
+    background-color: rgb(214, 212, 212);
+    height: 100vh;
+    overflow: auto;
+   justify-content: center;
+   
+}
+.booking-container::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}
+.rohith{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.children-container{
+    margin-top: 15px;
+}
+.market-box{  
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items:center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    width: 90vw;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+.market-inner-box{
+    display: flex;
+}
+@media screen and (max-width:576px) {
+    .market-inner-box{
+        flex-direction: column;
+    }
+}
+.cancelButton{
+    background-color: rgb(54, 102, 205);
+    border: 0px solid;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}

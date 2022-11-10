@@ -1,1 +1,17 @@
-<h1>Bookings Working Properly</h1>
+<div class="booking-container">
+    <div class="children-container">
+        <div class="market-box">
+            <div class="market-inner-box" *ngFor="let market of bookArray">
+                <img src="{{market.marketData.imageUrl}}" alt="market-image"class="rohith">
+                <div>
+                    <b>Market-Name:{{market.marketData.marketName}}</b>
+                    <br>
+                    <b>Date:{{market.bookDate}}</b>
+                    <br>
+                    <b>Address:{{market.marketData.location}}</b>
+                </div>
+            </div>            
+            <button class="cancelButton">Cancel Slot</button>   
+        </div>
+    </div>
+</div>

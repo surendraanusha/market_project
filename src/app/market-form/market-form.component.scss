@@ -1,0 +1,13 @@
+.market-form{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom,#ffe5ec,#f4fafc);
+    padding: 20px;
+    border-radius: 5px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

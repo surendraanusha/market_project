@@ -1,20 +1,27 @@
-<div class="markets-container">
-    <ng-container *ngFor="let market of marketArray.keys">
-            <mat-card class="example-card" (click)="addMe(market)">
-                <img src="{{marketArray[market]['imageUrl']}}"
-                 alt="Photo of a Shiba Inu"
-                 class="card-image"
-                 >
-                <mat-card-content>
-                <b>MarketName:</b>  {{marketArray[market]['marketName']}}
-                <br>
-                <b>MarketNumber:</b>  {{marketArray[market]['marketNumber']}} 
-                <br>
-                <b>MarketLocation:</b>  {{marketArray[market]['location']}}  
-                <br>
-                <b>Contact:</b>  {{marketArray[market]['contact']}}
-                </mat-card-content>
-              </mat-card>
-    </ng-container>
+<div class="entire-container">
+    <button class="add-market" routerLink="/add-market" *ngIf="userType">ADD MARKET+</button>
+    <button class="add-market" *ngIf="userType">Create Slot+</button>
+    <div class="markets-container"> 
+        <ng-container *ngFor="let market of marketArray.keys">
+            <div class="each-card">
+                <mat-card class="example-card" (click)="addMe(market)">
+                    <img src="{{marketArray[market]['imageUrl']}}"
+                     alt="Photo of a Shiba Inu"
+                     class="card-image"
+                     >
+                    <mat-card-content>
+                    <b>MarketName:</b>  {{marketArray[market]['marketName']}}
+                    <br>
+                    <b>MarketNumber:</b>  {{marketArray[market]['marketNumber']}} 
+                    <br>
+                    <b>MarketLocation:</b>  {{marketArray[market]['location']}}  
+                    <br>
+                    <b>Contact:</b>  {{marketArray[market]['contact']}}
+                    </mat-card-content>
+                </mat-card>
+                <button class="icon-button" (click)="editMarketInfo(market)" *ngIf="userType"><fa-icon [icon]="faPen"></fa-icon></button> 
+                <button class="icon-button" (click)="deleteMarket(market)" *ngIf="userType">Delete</button>
+            </div>
+        </ng-container>
+    </div>
 </div>
-<!-- <app-market-info [marketObj]="marketObject"></app-market-info> -->

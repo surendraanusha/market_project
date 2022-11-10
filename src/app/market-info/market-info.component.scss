@@ -2,7 +2,6 @@
 .whole-content{
     display: flex;
     justify-content: space-between;
-    // justify-content: center;
 }
 .market-image{
     height: 400px;
@@ -10,13 +9,11 @@
     border-radius: 10px;
 }
 .content-container{
-    // background-color: red;
     padding-left: 20px;
     width:50%;
 }
 .market-container{
     padding: 20px;
-    // background-color: aqua;
 }
 .editer{
     display: flex;

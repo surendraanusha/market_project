@@ -9,6 +9,8 @@ export class GettingDataService {
 
   marketDetailsObj:any
 
+  bookedMarketsArray:any=[];
+
 	userObject:any= {
 		user:{
 			id:1,

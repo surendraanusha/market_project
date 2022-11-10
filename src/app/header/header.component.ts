@@ -10,11 +10,14 @@ export class HeaderComponent implements OnInit {
 
   constructor(private router:Router) { }
 
-  loggedIn = false;
+  loggedIn:any;
 
   ngOnInit(): void {
     if(localStorage.getItem('userName') != null){
       this.loggedIn = true;
+    }
+    else{
+      this.loggedIn = false;
     }
   }
   signOut(){

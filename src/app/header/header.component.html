@@ -4,7 +4,12 @@
         <li class="list-opt" routerLink="/">Home</li>
         <li class="list-opt" routerLink="/market">Markets</li>
         <li class="list-opt" routerLink="/bookings">Bookings</li>
-        <button mat-raised-button color="accent" *ngIf="!loggedIn" routerLink="/login">Sing Up</button>
-        <button mat-raised-button color="primary" *ngIf="loggedIn" (click)="signOut()">Sing Out</button>
+        <div *ngIf="loggedIn; then trueBlock; else elseBlock"></div>
+        <ng-template #trueBlock>
+            <button mat-raised-button color="accent" routerLink="/login" (click)="signOut()">Sing Out</button>
+        </ng-template>
+        <ng-template #elseBlock>
+            <button mat-raised-button color="primary">Sing Up</button>
+        </ng-template>
     </ul>
 </nav>
